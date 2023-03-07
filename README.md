@@ -1,5 +1,5 @@
 # Slack clone
-This is a website clone of slack.com. Technologies used: React.js & Material UI + others found in package.json.
+This is a website clone of slack.com. Technologies used: React.js & Tailwind CSS.
 
 # Getting Started with Create React App
 

@@ -8,7 +8,21 @@ module.exports = {
     colors: {
       'purple': '#541554',
       'beige': '#f4ede4',
-      'blue': '#1264a3'
+      'blue': '#007aff',
+      'white': '#ffffff',
+      'yellow': '#ecb22e'
+    },
+    fontFamily: {
+      'notosans': ['Noto Sans', 'sans-serif']
+    },
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
     }
   },
   plugins: [],
