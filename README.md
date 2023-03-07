@@ -1,3 +1,6 @@
+# Slack clone
+This is a website clone of slack.com. Technologies used: React.js & Material UI + others found in package.json.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
