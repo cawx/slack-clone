@@ -13,6 +13,7 @@ module.exports = {
       'yellow': '#ecb22e'
     },
     fontFamily: {
+      'lato': ['Lato', 'sans-serif'],
       'notosans': ['Noto Sans', 'sans-serif']
     },
     container: {
@@ -23,7 +24,8 @@ module.exports = {
         xl: '5rem',
         '2xl': '6rem',
       },
-    }
+    },
+    
   },
   plugins: [],
 }
