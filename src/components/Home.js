@@ -3,6 +3,10 @@ import Navbar from './Navbar'
 import video1 from '../media/teamd.webm'
 import video2 from '../media/connectedness.webm'
 import video2mobile from '../media/connectedness-mobile.webm'
+import video3 from '../media/flexibility.webm'
+import video3mobile from '../media/flexibility-mobile.webm'
+import video4 from '../media/speed.webm'
+import video4mobile from '../media/speed-mobile.webm'
 import google from '../media/google.svg'
 import airbnb from '../media/airbnblogo.png'
 import nasa from '../media/nasalogo.png'
@@ -65,7 +69,45 @@ function Home() {
                 <a href='/' className='w-fit text-bluelink font-bold text-lg flex items-center'>Learn more about channels<BsArrowRight className='ml-2'/></a>
               </div>
             </div> 
-            
+          </div>
+        </section>
+        <section className='bg-beige'>
+          <div className=' flex flex-col-reverse lg:flex-row xl:container xl:mx-auto'>
+            <div className='flex justify-center xl:justify-start align-middle py-10'>
+              <div className='w-5/6 md:w-4/6 inline'>
+                <h1 className='text-3xl font-black md:text-5xl py-5'>Choose how you want to work</h1>
+                <p className='text-lg pb-5'>In Slack, you’ve got all the flexibility to work when, where and how it’s best for you. You can easily chat, send audio and video clips, or hop on a huddle to talk things out live.</p>
+                <a href='/' className='w-fit text-bluelink font-bold text-lg flex items-center'>Learn more about flexible communication<BsArrowRight className='ml-2'/></a>
+              </div>
+            </div> 
+            <div className='flex align-middle self-end'>
+              <video title="A user starting a huddle and recording a video clip in the Slack app" className="md:max-w-xl overflow-visible hidden lg:inline"  height="400" src={video3} loop muted autoPlay={true}></video>
+              <video className="max-w-xs sm:max-w-md  md:max-w-lg overflow-visible lg:hidden"  height="400" src={video3mobile} loop muted autoPlay={true}></video>
+            </div>
+          </div>
+        </section>
+        <section className='bg-beige'>
+          <div className='py-10 lg:flex xl:container xl:mx-auto'>
+            <div className='flex align-middle'>
+              <video title="Using the Workday integration to quickly file an expense report in the Slack app" className="md:max-w-xl overflow-visible hidden lg:inline"  height="400" src={video4} loop muted autoPlay={true}></video>
+              <video className="max-w-xs sm:max-w-md pr-2 md:max-w-lg overflow-visible lg:hidden"  height="400" src={video4mobile} loop muted autoPlay={true}></video>
+            </div>
+            <div className='flex justify-center align-middle py-10'>
+              <div className='w-5/6 md:w-4/6 inline'>
+                <h1 className='text-3xl font-black md:text-5xl py-5'>Move faster with your tools in one place</h1>
+                <p className='text-lg pb-5'>With your other work apps connected to Slack, you can work faster by switching tabs less. And with powerful tools like Workflow Builder, you can automate away routine tasks.</p>
+                <a href='/' className='w-fit text-bluelink font-bold text-lg flex items-center'>Learn more about the Slack platform<BsArrowRight className='ml-2'/></a>
+              </div>
+            </div> 
+          </div>
+        </section>
+        <section>
+          <div>
+            <h1>Teams large and small rely on Slack</h1>
+            <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
+            <button className='mx-2 p-3 px-4 my-2 text-sm rounded bg-purple text-white font-bold'>MEET SLACK FOR ENTERPRISE</button>
+            <button className='mx-2 p-3 px-4 my-2 text-sm rounded border border-purple text-purple font-bold' >TALK TO SALES</button>
+          
           </div>
         </section>
     </div>
