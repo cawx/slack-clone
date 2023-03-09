@@ -1,5 +1,11 @@
-# Slack clone
-This is a website clone of slack.com. Technologies used: React.js & Tailwind CSS.
+# Project
+
+Clone of the website [slack.com](https://slack.com/). Project is being hosted on ***. Technologies used: React.js & Tailwind CSS.
+
+## Setup
+
+1. Install [node.js](https://nodejs.org/en/)
+2. Run `npm i` and then `npm start`.
 
 # Getting Started with Create React App
 
