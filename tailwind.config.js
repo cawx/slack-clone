@@ -9,6 +9,7 @@ module.exports = {
       'purple': '#541554',
       'beige': '#f4ede4',
       'blue': '#007aff',
+      'bluelink': '#1264a3',
       'white': '#ffffff',
       'yellow': '#ecb22e'
     },
