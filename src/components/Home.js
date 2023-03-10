@@ -7,6 +7,7 @@ import video3 from '../media/flexibility.webm'
 import video3mobile from '../media/flexibility-mobile.webm'
 import video4 from '../media/speed.webm'
 import video4mobile from '../media/speed-mobile.webm'
+import video5 from '../media/customer-awards.mp4'
 import google from '../media/google.svg'
 import airbnb from '../media/airbnblogo.png'
 import nasa from '../media/nasalogo.png'
@@ -14,7 +15,7 @@ import etsy from '../media/etsylogo.png'
 import nyt from '../media/nytlogo.png'
 import target from '../media/targetlogo.png'
 import uber from '../media/uberlogo.png'
-import { BsArrowRight } from 'react-icons/bs'
+import { BsArrowRight, BsFillPlayFill } from 'react-icons/bs'
 
 function Home() {
 
@@ -101,15 +102,46 @@ function Home() {
             </div> 
           </div>
         </section>
-        <section>
-          <div>
-            <h1>Teams large and small rely on Slack</h1>
-            <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
-            <button className='mx-2 p-3 px-4 my-2 text-sm rounded bg-purple text-white font-bold'>MEET SLACK FOR ENTERPRISE</button>
-            <button className='mx-2 p-3 px-4 my-2 text-sm rounded border border-purple text-purple font-bold' >TALK TO SALES</button>
-          
+        <section className='container mx-auto mt-20'>
+          <div className=''>
+            <h1 className='text-center font-black text-3xl my-5 md:text-5xl'>Teams large and small rely on Slack</h1>
+            <p className='text-center my-5'>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
+            <div className='flex flex-col md:flex-row justify-center'>
+              <button className='w-full md:w-auto tracking-wide p-4 m-2 rounded bg-purplesecondary text-white font-bold'>MEET SLACK FOR ENTERPRISE</button>
+              <button className='w-full md:w-auto tracking-wide p-4 m-2 rounded border border-purplesecondary text-purplesecondary font-bold' >TALK TO SALES</button>
+            </div>
+            <div className='flex flex-col items-center md:flex-row justify-center'>
+              <div className='flex flex-col items-center text-center my-10 w-1/3'>
+                <span className='text-purplesecondary font-black text-5xl'>85%</span>
+                <p className='text-sm md:w-3/5'>of users say Slack has improved communication*</p>
+              </div>
+              <div className='flex flex-col items-center text-center my-10 w-1/3'>
+                <span className='text-purplesecondary font-black text-5xl'>86%</span>
+                <p className='text-sm md:w-3/5'>feel their ability to work remotely has improved*</p>
+              </div>
+              <div className='flex flex-col items-center text-center my-10 w-1/3'>
+                <span className='text-purplesecondary font-black text-5xl '>88%</span>
+                <p className='text-sm md:w-3/5'>feel more connected to their teams*</p>
+              </div>
+            </div>  
           </div>
         </section>
+        <section className='xl:container mx-auto mt-10 lg:flex'>
+            <div className='flex align-middle mr-2 relative justify-center items-center'>
+              <video title="Video featuring a Slack customer, company name" className="max-w-3xl md:max-w-2xl overflow-hidden rounded-r-full"  height="400" src={video5} loop muted autoPlay={true}></video>
+              <button className='flex items-center justify-center bg-blueplay h-12 w-20 absolute rounded hover:bg-bluelink'><BsFillPlayFill className=' text-white' /></button>
+            </div>
+            <div className='mx-7'>
+              <p className=' text-xl md:text-2xl italic tracking-wide mt-12 mb-5'>“We were able to create a large virtual network of employees that can communicate as though they are together. There was a lot of disruption in terms of where we worked, but in terms of how we worked—very little disruption.”</p>
+              <p className='font-black'>Mark Smith</p>
+              <p>Senior Technical Product Manager, T-Mobile</p>
+              <a href='/' className='w-fit text-bluelink font-bold text-lg flex items-center my-4'>See more customer stories<BsArrowRight className='ml-2'/></a>
+            </div>
+          
+        </section>
+        <div className='mx-7 text-sm opacity-75 mt-10 text-center'>
+            <p>* Weighted average. Based on 2,707 survey responses from weekly Slack users in the U.S., UK, Australia and Canada with a ± 2% margin of error at 95% CI (December 2021).</p>
+        </div>
     </div>
   )
 }
