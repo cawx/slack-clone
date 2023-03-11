@@ -15,6 +15,7 @@ import etsy from '../media/etsylogo.png'
 import nyt from '../media/nytlogo.png'
 import target from '../media/targetlogo.png'
 import uber from '../media/uberlogo.png'
+import cardPromo from '../media/img-promo-01.png'
 import { BsArrowRight, BsFillPlayFill } from 'react-icons/bs'
 
 function Home() {
@@ -139,9 +140,26 @@ function Home() {
             </div>
           
         </section>
-        <div className='mx-7 text-sm opacity-75 mt-10 text-center'>
+        <div className='mx-7 text-sm opacity-75 mt-10 pb-10 text-center'>
             <p>* Weighted average. Based on 2,707 survey responses from weekly Slack users in the U.S., UK, Australia and Canada with a ± 2% margin of error at 95% CI (December 2021).</p>
         </div>
+        <section className=' bg-beige py-16'>
+          <div className='container mx-auto'>
+            <h1 className='text-2xl font-black text-center mx-3 md:text-4xl mb-10 '>Take a deeper dive into a new way to work</h1>
+            <div className='flex justify-center'>
+              <a href="/solutions" className='bg-purple px-4 pt-8 pb-5 text-white hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>
+                <p className='text-left text-sm tracking-wide'>Collection</p>
+                <h1 className='font-black text-left text-xl'>Slack as your digital HQ</h1>
+                <img className='mt-16 mb-10' src={cardPromo} />
+                <div className='flex justify-between align-middle'>
+                  <p className='uppercase font-black tracking-wider'>See all</p>
+                  <BsArrowRight className='text-2xl' />
+                </div>
+              </a>
+            </div>
+          </div>
+          
+        </section>
     </div>
   )
 }
