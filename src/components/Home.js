@@ -16,6 +16,10 @@ import nyt from '../media/nytlogo.png'
 import target from '../media/targetlogo.png'
 import uber from '../media/uberlogo.png'
 import cardPromo from '../media/img-promo-01.png'
+import cardPromo2 from '../media/img-promo-02.jpg'
+import cardPromo3 from '../media/img-promo-03.png'
+import cardPromo4 from '../media/img-promo-04.jpg'
+import Footer from './Footer'
 import { BsArrowRight, BsFillPlayFill } from 'react-icons/bs'
 
 function Home() {
@@ -127,6 +131,7 @@ function Home() {
             </div>  
           </div>
         </section>
+        {/* CLIENT REVIEW SECTION */}
         <section className='xl:container mx-auto mt-10 lg:flex'>
             <div className='flex align-middle mr-2 relative justify-center items-center'>
               <video title="Video featuring a Slack customer, company name" className="max-w-3xl md:max-w-2xl overflow-hidden rounded-r-full"  height="400" src={video5} loop muted autoPlay={true}></video>
@@ -138,28 +143,69 @@ function Home() {
               <p>Senior Technical Product Manager, T-Mobile</p>
               <a href='/' className='w-fit text-bluelink font-bold text-lg flex items-center my-4'>See more customer stories<BsArrowRight className='ml-2'/></a>
             </div>
-          
         </section>
         <div className='mx-7 text-sm opacity-75 mt-10 pb-10 text-center'>
             <p>* Weighted average. Based on 2,707 survey responses from weekly Slack users in the U.S., UK, Australia and Canada with a ± 2% margin of error at 95% CI (December 2021).</p>
         </div>
+        {/* CARDS SECTION */}
         <section className=' bg-beige py-16'>
           <div className='container mx-auto'>
             <h1 className='text-2xl font-black text-center mx-3 md:text-4xl mb-10 '>Take a deeper dive into a new way to work</h1>
-            <div className='flex justify-center'>
-              <a href="/solutions" className='bg-purple px-4 pt-8 pb-5 text-white hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>
+            <div className='flex flex-wrap justify-center xl:space-x-4'>
+              <a href="/solutions" className='h-112 w-72 bg-purple px-4 pt-8 pb-5 text-white hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>
                 <p className='text-left text-sm tracking-wide'>Collection</p>
-                <h1 className='font-black text-left text-xl'>Slack as your digital HQ</h1>
+                <h1 className='font-black text-left text-2xl'>Slack as your digital HQ</h1>
                 <img className='mt-16 mb-10' src={cardPromo} />
                 <div className='flex justify-between align-middle'>
                   <p className='uppercase font-black tracking-wider'>See all</p>
                   <BsArrowRight className='text-2xl' />
                 </div>
               </a>
+              <a href="/solutions" className='bg-white px-4 pt-3 pb-5 h-112 w-72 flex flex-col text-black hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>              
+                <img className='' src={cardPromo2} />                
+                <p className='text-left text-sm tracking-wide mt-5'>Resource</p>
+                <h1 className='font-black text-left text-2xl mt-2'>See how others are building their digital HQ</h1>
+                <div className='flex justify-between align-bottom text-bluelink mt-auto'>
+                  <p className='uppercase font-black tracking-wider'>read more</p>
+                  <BsArrowRight className='text-2xl' />
+                </div>                              
+              </a>
+              <a href="/solutions" className='bg-white px-4 pt-3 pb-5 h-112 w-72 flex flex-col text-black hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>              
+                <img className='' src={cardPromo3} />                
+                <p className='text-left text-sm tracking-wide mt-5'>Webinar</p>
+                <h1 className='font-black text-left text-2xl mt-2'>Win the battle for talent with a digital HQ</h1>
+                <div className='flex justify-between align-bottom text-bluelink mt-auto'>
+                  <p className='uppercase font-black tracking-wider'>watch now</p>
+                  <BsArrowRight className='text-2xl' />
+                </div>                              
+              </a>
+              <a href="/solutions" className='bg-white px-4 pt-3 pb-5 h-112 w-72 flex flex-col text-black hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>              
+                <img className='' src={cardPromo4} />                
+                <p className='text-left text-sm tracking-wide mt-5'>E-book</p>
+                <h1 className='font-black text-left text-2xl mt-2'>Reinventing work: New imepratives for the future of working</h1>
+                <div className='flex justify-between align-bottom text-bluelink mt-auto'>
+                  <p className='uppercase font-black tracking-wider'>get e-book</p>
+                  <BsArrowRight className='text-2xl' />
+                </div>                              
+              </a>
             </div>
-          </div>
-          
+            {/* 
+            <div>
+              <button className='bg-purple rounded-full w-3 h-3'></button>
+            </div>
+            */}
+          </div>  
         </section>
+        <section id="clip-path-section" className='bg-purple py-20'>
+          <div className='container mx-auto'>
+            <h1 className='text-white font-bold text-5xl text-center py-5'>Welcome to your new digital HQ</h1>
+            <div className='flex flex-col md:flex-row justify-center'>
+              <button className='w-full md:w-auto tracking-wide p-4 m-2 px-10 rounded bg-white text-purple font-bold text-sm'>TRY FOR FREE</button>
+              <button className='w-full md:w-auto tracking-wide p-4 m-2 px-10 rounded border border-white text-white font-bold text-sm' >TALK TO SALES</button>
+            </div> 
+          </div>
+        </section>
+        <Footer />
     </div>
   )
 }

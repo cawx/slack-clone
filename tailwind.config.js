@@ -28,6 +28,12 @@ module.exports = {
         '2xl': '6rem',
       },
     },
+    extend: {
+      height: {
+        '128': '32rem',
+        '112': '28rem'
+      }
+    }
     
   },
   plugins: [],
