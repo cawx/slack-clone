@@ -24,7 +24,6 @@ import { BsArrowRight, BsFillPlayFill } from 'react-icons/bs'
 
 function Home() {
 
-
   return (
     <div className="font-lato overflow-x-hidden">
         <section className='section bg-purple pb-20'>
@@ -72,7 +71,7 @@ function Home() {
               <div className='w-5/6 md:w-4/6 inline'>
                 <h1 className='text-3xl font-black md:text-5xl py-5'>Bring your team together</h1>
                 <p className='text-lg pb-5'>At the heart of Slack are channels: organized spaces for everyone and everything you need for work. In channels, it’s easier to connect across departments, offices, time zones and even other companies.</p>
-                <a href='/' className='w-fit text-bluelink font-bold text-lg flex items-center'>Learn more about channels<BsArrowRight className='ml-2'/></a>
+                <a href='/' className='w-fit hover:text-red text-bluelink font-bold text-lg flex items-center'>Learn more about channels<BsArrowRight className='ml-2'/></a>
               </div>
             </div> 
           </div>
@@ -152,17 +151,17 @@ function Home() {
           <div className='container mx-auto'>
             <h1 className='text-2xl font-black text-center mx-3 md:text-4xl mb-10 '>Take a deeper dive into a new way to work</h1>
             <div className='flex flex-wrap justify-center xl:space-x-4'>
-              <a href="/solutions" className='h-112 w-72 bg-purple px-4 pt-8 pb-5 text-white hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>
+              <a href="/solutions" className='m-5 xl:m-0 h-112 w-72 bg-purple px-4 pt-8 pb-5 text-white hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>
                 <p className='text-left text-sm tracking-wide'>Collection</p>
                 <h1 className='font-black text-left text-2xl'>Slack as your digital HQ</h1>
-                <img className='mt-16 mb-10' src={cardPromo} />
+                <img className='mt-16 mb-10' src={cardPromo} alt="" />
                 <div className='flex justify-between align-middle'>
                   <p className='uppercase font-black tracking-wider'>See all</p>
                   <BsArrowRight className='text-2xl' />
                 </div>
               </a>
-              <a href="/solutions" className='bg-white px-4 pt-3 pb-5 h-112 w-72 flex flex-col text-black hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>              
-                <img className='' src={cardPromo2} />                
+              <a href="/solutions" className='m-5 xl:m-0 bg-white px-4 pt-3 pb-5 h-112 w-72 flex flex-col text-black hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>              
+                <img className='' src={cardPromo2} alt="" />                
                 <p className='text-left text-sm tracking-wide mt-5'>Resource</p>
                 <h1 className='font-black text-left text-2xl mt-2'>See how others are building their digital HQ</h1>
                 <div className='flex justify-between align-bottom text-bluelink mt-auto'>
@@ -170,8 +169,8 @@ function Home() {
                   <BsArrowRight className='text-2xl' />
                 </div>                              
               </a>
-              <a href="/solutions" className='bg-white px-4 pt-3 pb-5 h-112 w-72 flex flex-col text-black hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>              
-                <img className='' src={cardPromo3} />                
+              <a href="/solutions" className='m-5 xl:m-0 bg-white px-4 pt-3 pb-5 h-112 w-72 flex flex-col text-black hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>              
+                <img className='' src={cardPromo3} alt="" />                
                 <p className='text-left text-sm tracking-wide mt-5'>Webinar</p>
                 <h1 className='font-black text-left text-2xl mt-2'>Win the battle for talent with a digital HQ</h1>
                 <div className='flex justify-between align-bottom text-bluelink mt-auto'>
@@ -179,8 +178,8 @@ function Home() {
                   <BsArrowRight className='text-2xl' />
                 </div>                              
               </a>
-              <a href="/solutions" className='bg-white px-4 pt-3 pb-5 h-112 w-72 flex flex-col text-black hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>              
-                <img className='' src={cardPromo4} />                
+              <a href="/solutions" className='m-5 xl:m-0 bg-white px-4 pt-3 pb-5 h-112 w-72 flex flex-col text-black hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>              
+                <img className='' src={cardPromo4} alt="" />                
                 <p className='text-left text-sm tracking-wide mt-5'>E-book</p>
                 <h1 className='font-black text-left text-2xl mt-2'>Reinventing work: New imepratives for the future of working</h1>
                 <div className='flex justify-between align-bottom text-bluelink mt-auto'>

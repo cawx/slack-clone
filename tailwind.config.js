@@ -4,17 +4,6 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
-    colors: {
-      'purple': '#541554',
-      'purplesecondary': '#611f69',
-      'beige': '#f4ede4',
-      'blue': '#007aff',
-      'bluelink': '#1264a3',
-      'blueplay': '#36c5f0',
-      'white': '#ffffff',
-      'yellow': '#ecb22e'
-    },
     fontFamily: {
       'lato': ['Lato', 'sans-serif'],
       'notosans': ['Noto Sans', 'sans-serif']
@@ -32,7 +21,17 @@ module.exports = {
       height: {
         '128': '32rem',
         '112': '28rem'
-      }
+      },
+      colors: {
+        'purple': '#541554',
+        'purplesecondary': '#611f69',
+        'beige': '#f4ede4',
+        'blue': '#007aff',
+        'bluelink': '#1264a3',
+        'blueplay': '#36c5f0',
+        'white': '#ffffff',
+        'yellow': '#ecb22e'
+      },
     }
     
   },

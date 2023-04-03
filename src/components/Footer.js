@@ -66,10 +66,10 @@ function Footer() {
                     <div className='flex flex-col w-full lg:items-center lg:flex-row lg:w-auto '>
                         <a href='/' className='flex items-center text-bluelink font-bold my-2 whitespace-nowrap'><AiOutlineCloudDownload className='text-2xl mr-2' />Download Slack</a>
                         <div className='flex justify-between md:justify-start w-full lg:mx-3'>
-                            <AiOutlineTwitter className='text-xl md:mx-1 hover:text-bluelink hover:cursor-pointer'/>
-                            <AiFillFacebook className='text-xl md:mx-1 hover:text-bluelink hover:cursor-pointer'/>
-                            <AiFillYoutube className='text-xl md:mx-1 hover:text-bluelink hover:cursor-pointer'/>
-                            <AiFillLinkedin className='text-xl md:mx-1 hover:text-bluelink hover:cursor-pointer'/>  
+                            <a href='https://twitter.com/slackhq' title='Twitter'><AiOutlineTwitter className='text-xl md:mx-1 hover:text-bluelink hover:cursor-pointer'/></a>
+                            <a href='https://facebook.com/slackhq' title='Facebook'><AiFillFacebook className='text-xl md:mx-1 hover:text-bluelink hover:cursor-pointer'/></a>
+                            <a href='https://youtube.com/channel/UCY3YECgeBcLCzIrFLP4gblw' title='YouTube'><AiFillYoutube className='text-xl md:mx-1 hover:text-bluelink hover:cursor-pointer'/></a>
+                            <a href='https://linkedin.com/company/tiny-spec-inc' title='LinkedIn'><AiFillLinkedin className='text-xl md:mx-1 hover:text-bluelink hover:cursor-pointer'/></a>
                         </div>
                     </div>                   
                 </div>
