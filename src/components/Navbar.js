@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import logo from '../media/logo-white.svg'
-import { AiOutlineClose, AiOutlineMenu, AiOutlineDown, AiOutlineRight } from 'react-icons/ai'
+import { AiOutlineClose, AiOutlineMenu, AiOutlineDown, AiOutlineRight, AiOutlineCloudDownload } from 'react-icons/ai'
 import { HiOutlineSearch } from 'react-icons/hi'
 
 function Navbar() {
   const [mobileopen, setMobileOpen] = useState(false)
+  const [dropdown, setDropdown] = useState(false)
 
   return (
     <>
@@ -13,7 +14,22 @@ function Navbar() {
             <div className='flex items-center w-full'>
               <a className='visible' href='/'><img src={logo} alt="" /></a>
               <div className='xl:flex hidden space-x-6 mx-8 font-bold xl:visible'>
-                  <a className=' hover:underline flex items-center' href='/'>Product<AiOutlineDown className='ml-1 h-3'/></a>
+                  <button onClick={() => setDropdown(!dropdown)} className='relative flex items-center'>
+                    Product<AiOutlineDown className='ml-1 h-3'/>
+                    {dropdown && (
+                      <div className='absolute font-normal my-2 top-6 left-[-10px] flex flex-col bg-white text-gray-800 z-10 w-52 text-left text-sm rounded-xl shadow-md'>
+                        <a href='#' className='my-[1px] mx-[1px] px-5 hover:bg-bluelink hover:text-white py-2 rounded-t-xl'>Features</a>  
+                        <a href='#' className='my-[1px] mx-[1px] px-5 hover:bg-bluelink hover:text-white py-2'>Channels</a>  
+                        <a href='#' className='my-[1px] mx-[1px] px-5 hover:bg-bluelink hover:text-white py-2'>Digital HQ</a>  
+                        <a href='#' className='my-[1px] mx-[1px] px-5 hover:bg-bluelink hover:text-white py-2'>Integrations</a>  
+                        <a href='#' className='my-[1px] mx-[1px] px-5 hover:bg-bluelink hover:text-white py-2'>Security</a>  
+                        <a href='#' className='my-[1px] mx-[1px] px-5 hover:bg-bluelink hover:text-white py-2'>Slack Connect</a>  
+                        <a href='#' className='my-[1px] mx-[1px] px-5 hover:bg-bluelink hover:text-white py-2'>Customers</a>
+                        <div className='w-full bg-gray-200 h-[1px]'></div>
+                        <a href='#' className='my-[1px] mx-[1px] px-5 hover:bg-bluelink hover:text-white py-2 rounded-b-xl flex'><AiOutlineCloudDownload className='text-xl mr-2' />Download Slack</a>  
+                      </div>
+                    )}
+                  </button>
                   <a className=' hover:underline' href='/solutions'>Solutions</a>
                   <a className=' hover:underline' href='/'>Enterprise</a>
                   <a className=' hover:underline' href='/'>Resources</a>
