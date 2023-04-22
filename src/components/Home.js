@@ -22,6 +22,31 @@ import cardPromo4 from '../media/img-promo-04.jpg'
 import Footer from './Footer'
 import { BsArrowRight, BsFillPlayFill } from 'react-icons/bs'
 
+const cards = [
+  {
+    id: "1",
+    image: cardPromo2,
+    subtitle: "Resource",
+    title: "See how others are building their digital HQ",
+    buttontitle: "Read more"
+  },
+  {
+    id: "2",
+    image: cardPromo3,
+    subtitle: "Webinar",
+    title: "Win the battle for talent with a digital HQ",
+    buttontitle: "Watch now"
+  },
+  {
+    id: "3",
+    image: cardPromo4,
+    subtitle: "E-book",
+    title: "Reinventing work: New imperatives for the future of working",
+    buttontitle: "Get e-book"
+  },
+]
+
+
 function Home() {
 
   return (
@@ -106,6 +131,7 @@ function Home() {
             </div> 
           </div>
         </section>
+        {/* CLIENT REVIEW */}
         <section className='container mx-auto mt-20'>
           <div className=''>
             <h1 className='text-center font-black text-3xl my-5 md:text-5xl'>Teams large and small rely on Slack</h1>
@@ -149,8 +175,8 @@ function Home() {
         {/* CARDS SECTION */}
         <section className=' bg-beige py-16'>
           <div className='container mx-auto'>
-            <h1 className='text-2xl font-black text-center mx-3 md:text-4xl mb-10 '>Take a deeper dive into a new way to work</h1>
-            <div className='flex flex-wrap justify-center xl:space-x-4'>
+            <h1 className='text-2xl font-black text-center md:text-4xl mb-10 '>Take a deeper dive into a new way to work</h1>
+            <div className='flex justify-center xl:space-x-4'>
               <a href="/solutions" className='m-5 xl:m-0 h-112 w-72 bg-purple px-4 pt-8 pb-5 text-white hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>
                 <p className='text-left text-sm tracking-wide'>Collection</p>
                 <h1 className='font-black text-left text-2xl'>Slack as your digital HQ</h1>
@@ -160,41 +186,21 @@ function Home() {
                   <BsArrowRight className='text-2xl' />
                 </div>
               </a>
-              <a href="/solutions" className='m-5 xl:m-0 bg-white px-4 pt-3 pb-5 h-112 w-72 flex flex-col text-black hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>              
-                <img className='' src={cardPromo2} alt="" />                
-                <p className='text-left text-sm tracking-wide mt-5'>Resource</p>
-                <h1 className='font-black text-left text-2xl mt-2'>See how others are building their digital HQ</h1>
-                <div className='flex justify-between align-bottom text-bluelink mt-auto'>
-                  <p className='uppercase font-black tracking-wider'>read more</p>
-                  <BsArrowRight className='text-2xl' />
-                </div>                              
-              </a>
-              <a href="/solutions" className='m-5 xl:m-0 bg-white px-4 pt-3 pb-5 h-112 w-72 flex flex-col text-black hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>              
-                <img className='' src={cardPromo3} alt="" />                
-                <p className='text-left text-sm tracking-wide mt-5'>Webinar</p>
-                <h1 className='font-black text-left text-2xl mt-2'>Win the battle for talent with a digital HQ</h1>
-                <div className='flex justify-between align-bottom text-bluelink mt-auto'>
-                  <p className='uppercase font-black tracking-wider'>watch now</p>
-                  <BsArrowRight className='text-2xl' />
-                </div>                              
-              </a>
-              <a href="/solutions" className='m-5 xl:m-0 bg-white px-4 pt-3 pb-5 h-112 w-72 flex flex-col text-black hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>              
-                <img className='' src={cardPromo4} alt="" />                
-                <p className='text-left text-sm tracking-wide mt-5'>E-book</p>
-                <h1 className='font-black text-left text-2xl mt-2'>Reinventing work: New imepratives for the future of working</h1>
-                <div className='flex justify-between align-bottom text-bluelink mt-auto'>
-                  <p className='uppercase font-black tracking-wider'>get e-book</p>
-                  <BsArrowRight className='text-2xl' />
-                </div>                              
-              </a>
+              {cards.map((card) => (
+                <a href="/solutions" key={card.id} className='m-5 xl:m-0 bg-white px-4 pt-3 pb-5 h-112 w-72 flex flex-col text-black hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>              
+                  <img className='' src={card.image} alt="" />                
+                  <p className='text-left text-sm tracking-wide mt-5'>{card.subtitle}</p>
+                  <h1 className='font-black text-left text-2xl mt-2'>{card.title}</h1>
+                  <div className='flex justify-between align-bottom text-bluelink mt-auto'>
+                    <p className='uppercase font-black tracking-wider'>{card.buttontitle}</p>
+                    <BsArrowRight className='text-2xl' />
+                  </div>                              
+                </a>
+              ))}
             </div>
-            {/* 
-            <div>
-              <button className='bg-purple rounded-full w-3 h-3'></button>
-            </div>
-            */}
           </div>  
         </section>
+        {/* CONTACT US SECTION */}
         <section id="clip-path-section" className='bg-purple py-20'>
           <div className='container mx-auto'>
             <h1 className='text-white font-bold text-5xl text-center py-5'>Welcome to your new digital HQ</h1>
