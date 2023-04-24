@@ -11,7 +11,7 @@ function Footer() {
                 <div className=''>
                   <img src={logo} className="visible self-start mb-10 lg:mr-36" />
                 </div>
-                <div className='flex justify-between w-full'>
+                <div className='flex justify-between w-full flex-wrap'>
                     <div className='flex flex-col w-fit text-sm'>
                         <h2 className='uppercase font-black tracking-wide mb-2'>why slack?</h2>
                         <a href="/" className='my-2 hover:text-bluelink'>Slack vs. Email</a>

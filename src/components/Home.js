@@ -176,7 +176,7 @@ function Home() {
         <section className=' bg-beige py-16'>
           <div className='container mx-auto'>
             <h1 className='text-2xl font-black text-center md:text-4xl mb-10 '>Take a deeper dive into a new way to work</h1>
-            <div className='flex justify-center xl:space-x-4'>
+            <div className='flex flex-wrap justify-center xl:space-x-4'>
               <a href="/solutions" className='m-5 xl:m-0 h-112 w-72 bg-purple px-4 pt-8 pb-5 text-white hover:scale-105 transition ease-in-out duration-300 hover:drop-shadow-md'>
                 <p className='text-left text-sm tracking-wide'>Collection</p>
                 <h1 className='font-black text-left text-2xl'>Slack as your digital HQ</h1>
