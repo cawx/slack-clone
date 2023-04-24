@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/slackclone/static/css/main.e98c080c.css",
+    "main.js": "/slackclone/static/js/main.1d4ec425.js",
+    "static/js/787.e15c3452.chunk.js": "/slackclone/static/js/787.e15c3452.chunk.js",
+    "static/media/flexibility.webm": "/slackclone/static/media/flexibility.5193928a8c5fe3041689.webm",
+    "static/media/connectedness.webm": "/slackclone/static/media/connectedness.8652e69ba6e528f501b5.webm",
+    "static/media/customer-awards.mp4": "/slackclone/static/media/customer-awards.513f2c8fc741abd2e4e7.mp4",
+    "static/media/speed-mobile.webm": "/slackclone/static/media/speed-mobile.ee97cc209cb9c433dde9.webm",
+    "static/media/speed.webm": "/slackclone/static/media/speed.9fa3500d1b4ca93bd6a2.webm",
+    "static/media/connectedness-mobile.webm": "/slackclone/static/media/connectedness-mobile.fa855e21d0694d5b1e79.webm",
+    "static/media/flexibility-mobile.webm": "/slackclone/static/media/flexibility-mobile.7a3aeb2902055df6a1f1.webm",
+    "static/media/teamd.webm": "/slackclone/static/media/teamd.a33fd284bfa2e2c9bf93.webm",
+    "static/media/img-promo-02.jpg": "/slackclone/static/media/img-promo-02.cec55bc3843148f8610e.jpg",
+    "static/media/img-promo-03.png": "/slackclone/static/media/img-promo-03.31ac9c4ae44735e242cf.png",
+    "static/media/img-promo-04.jpg": "/slackclone/static/media/img-promo-04.42b5dc988c1777a0cf46.jpg",
+    "static/media/img-promo-01.png": "/slackclone/static/media/img-promo-01.cbba08ee00784bcf3f80.png",
+    "static/media/logo-white.svg": "/slackclone/static/media/logo-white.adaebfe10ec427bb47ef16c6403a0aea.svg",
+    "static/media/logo-black.svg": "/slackclone/static/media/logo-black.59573cc9c64a2bb3cb51ef5c77f5969a.svg",
+    "static/media/logo.svg": "/slackclone/static/media/logo.3eaebf8578eda80a8565cf9bf7d8c701.svg",
+    "static/media/google.svg": "/slackclone/static/media/google.c5f20af48e48c8ceb2dc881a3bc511c1.svg",
+    "index.html": "/slackclone/index.html",
+    "main.e98c080c.css.map": "/slackclone/static/css/main.e98c080c.css.map",
+    "main.1d4ec425.js.map": "/slackclone/static/js/main.1d4ec425.js.map",
+    "787.e15c3452.chunk.js.map": "/slackclone/static/js/787.e15c3452.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e98c080c.css",
+    "static/js/main.1d4ec425.js"
+  ]
+}
