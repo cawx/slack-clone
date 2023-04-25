@@ -1,6 +1,6 @@
 # Project
 
-Clone of the website [slack.com](https://slack.com/). Project is being hosted on ***. Technologies used: React.js & Tailwind CSS.
+Clone of the website [slack.com](https://slack.com/). Project is being hosted on [https://slack-clone-one-lac.vercel.app/](https://slack-clone-one-lac.vercel.app/). Technologies used: React.js & Tailwind CSS.
 
 ## Setup
 
